@@ -5,7 +5,7 @@ const UseFetchNews = (category) => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const apiKey = process.env.NEWS_APP_API_KEY;
+  const apiKey = process.env.REACT_APP_NEWS_APP_API_KEY;
 
   useEffect(() => {
     const fetchNews = async () => {
